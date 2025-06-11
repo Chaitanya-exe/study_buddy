@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "Define distributed operating system. What are advantages and disadvantages of a distributed operating system? Discuss major design issues of a distributed system.",
+      "marks": 15
+    },
+    {
+      "question": "Explain ATM network in detail",
+      "marks": 7
+    },
+    {
+      "question": "Explain client-server model",
+      "marks": 8
+    },
+    {
+      "question": "What is deadlock? How it can be handled in distributed system? Explain.",
+      "marks": 15
+    },
+    {
+      "question": "What is thread? Describe thread usage.",
+      "marks": 7
+    },
+    {
+      "question": "What is real time distributed system? Also explain design issue in real time distributed system.",
+      "marks": 8
+    },
+    {
+      "question": "What is file service interface? Differentiate between a file service using upload/download model and using the remote access model.",
+      "marks": 15
+    },
+    {
+      "question": "What is distributed shared memory? Describe different kind of shared memory multiprocessor.",
+      "marks": 15
+    },
+    {
+      "question": "Explain the following terms:\n(a) Security Management\n(b) JAVA RMI",
+      "marks": 15
+    },
+    {
+      "question": "Explain architecture of distributed web-based system with a diagram.",
+      "marks": 15
+    }
+  ]
+}
