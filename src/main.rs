@@ -33,6 +33,7 @@ async fn main() -> Result<() , Box<dyn std::error::Error>> {
 
     let questions: Value = serde_json::from_reader(reader).unwrap();
 
+    //preparing answers
     if let Some(questions_list) = questions["questions"].as_array() {
         for question in questions_list.iter(){
             let ques_embedding = embedding::prepare_embedding(&question["question"].as_str().unwrap()).await?;
@@ -41,12 +42,11 @@ async fn main() -> Result<() , Box<dyn std::error::Error>> {
             let answer = ollama::ask_ollama(&question["question"].as_str().unwrap(), search_result).await?;
     
             println!("{}", answer);
-            println!("\n\n");
+            println!("\n\n================================");
         }     
     }else{
         println!("some error occured while parsing Questions");
     }
-    //preparing answers
 
     Ok(())
 }
